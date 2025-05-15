@@ -1,6 +1,7 @@
 # backend/app/api/v1/endpoints/ai_suggestions.py
 from fastapi import APIRouter, HTTPException, Depends, Body
 from typing import Any, List, Dict
+from pydantic import BaseModel
 
 # Assuming your service layer will handle the actual AI logic
 # from app.services.ai_suggestion_service import get_chord_suggestions, get_lyric_suggestions, analyze_project_style
