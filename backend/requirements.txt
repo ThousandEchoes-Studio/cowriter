@@ -7,3 +7,4 @@ mido
 python-multipart
 librosa
 crepe
+email-validator
