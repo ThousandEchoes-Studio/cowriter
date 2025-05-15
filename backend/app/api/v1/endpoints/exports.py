@@ -95,7 +95,7 @@ async def export_project(
     wav_files_info = []
     for i, track_data in enumerate(export_data.midi_tracks):
         track_name = track_data.get("track_name", f"Track_{i+1}")
-        wav_filename_placeholder = f"{export_session_id}_{track_name.replace(" ", "_")}.wav"
+        wav_filename_placeholder = f"{export_session_id}_{track_name.replace(' ', '_')}.wav"
         wav_filepath_placeholder = os.path.join(user_export_dir, wav_filename_placeholder) # Save in user-specific dir
         
         try:
