@@ -125,7 +125,7 @@ async def export_project(
         "wav_stems": [
             {
                 **info,
-                "download_link_placeholder": f"/api/v1/exports/download/{user_id}/{info["filename"]}" if info["filename"] else None # Include user_id
+                "download_link_placeholder": f"/api/v1/exports/download/{user_id}/{info['filename']}" if info['filename'] else None # Include user_id
             } for info in wav_files_info
         ]
     }
